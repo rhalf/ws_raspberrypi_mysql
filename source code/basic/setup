@@ -1,0 +1,16 @@
+0   sudo apt-get install mariadb-server
+    sudo apt install mariadb-server
+1   GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' 
+    IDENTIFIED BY 'password';
+2   sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+    update bind-address = 127.0.0.1 to bind-address=*
+3   sudo apt-get update
+    sudo apt-get install python3-pip
+    sudo apt-get install python3-mysqldb
+4   $ ps -fA | grep activity11.py
+    PID 2456
+    $ sudo kill 2456  
+
+
+
+
